@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE livres SYSTEM "livre.dtd">
+<livres>
+<livre rang="1">
+<titre>Lorenzaccio</titre>
+<auteur>Alfred de Musset</auteur>
+<genre>Drame romantique</genre>
+<date type="parution">1834</date>
+<origine type="pays">France</origine>
+<editeur>Hachette</editeur>
+<code>9782011689726</code>
+</livre>
+</livres>
