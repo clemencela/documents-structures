@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE catalogue[
+<!ENTITY ms "Sony">
+<!ENTITY ma "Apple">
+<!ENTITY stoc16 "16 Go">
+<!ELEMENT catalogue (baladeur+)>
+<!ATTLIST baladeur id CDATA #REQUIRED>
+<!ELEMENT baladeur (marque,modele?,prix,stockage,poids)>
+<!ELEMENT marque (#PCDATA)>
+<!ELEMENT modele (#PCDATA)>
+<!ELEMENT prix (#PCDATA)>
+<!ELEMENT stockage (#PCDATA)>
+<!ELEMENT poids (#PCDATA)>
+]>
+<catalogue>
+	<baladeur id="1">
+		<marque>&ms;</marque>
+		<modele>Walkman NWA100TPS High-Resolution</modele>
+		<prix>439,99€</prix>
+		<stockage>&stoc16;</stockage>
+		<poids>103g</poids>
+	</baladeur>
+	<baladeur id="2">
+		<marque>Onearz</marque>
+		<prix>39,99€</prix>
+		<stockage>8 Go</stockage>
+		<poids>30g</poids>
+	</baladeur>
+	<baladeur id="3">
+		<marque>&ms;</marque>
+		<modele>NW-A45B</modele>
+		<prix>219,99€</prix>
+		<stockage>&stoc16;</stockage>
+		<poids>98 g</poids>
+	</baladeur>
+	<baladeur id="4">
+		<marque>&ma;</marque>
+		<modele>iPod Touch</modele>
+		<prix>249,99€</prix>
+		<stockage>32 Go</stockage>
+		<poids>88g</poids>
+	</baladeur>
+	<baladeur id="5">
+		<marque>&ma;</marque>
+		<modele>iPod classic III</modele>
+		<prix>225€</prix>
+		<stockage>160 Go</stockage>
+		<poids>140 g</poids>
+	</baladeur>
+</catalogue>
