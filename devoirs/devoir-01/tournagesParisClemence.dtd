@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--notre racine-->
+<!ELEMENT tournages_paris (tournage+)>
+<!--l'element tournage va contenir les differentes informations-->
+<!ELEMENT tournage (titre,realisateur,organisme_demandeur,type_tournage,lieu,dates)>
+<!--tournage aura un attribut pour lui donner un numero unique-->
+<!ATTLIST tournage
+    n CDATA #REQUIRED>
+<!--les autres elements contenus dans tournage, qui contiennent du texte-->
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT realisateur (#PCDATA)>
+<!ELEMENT organisme_demandeur (#PCDATA)>
+<!ELEMENT type_tournage (#PCDATA)>
+<!--lieu va contenir adresse, arrondissement et xy qui contiendront du texte-->
+<!ELEMENT lieu (adresse,arrondissement,xy)>
+<!ELEMENT adresse (#PCDATA)>
+<!ELEMENT arrondissement (#PCDATA)>
+<!ELEMENT xy (#PCDATA)>
+<!--dates va contenir date_debut et date_fin qui contiendront du texte-->
+<!ELEMENT dates (date_debut,date_fin)>
+<!ELEMENT date_debut (#PCDATA)>
+<!ELEMENT date_fin (#PCDATA)>
