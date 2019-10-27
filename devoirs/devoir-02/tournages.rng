@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element name="tournages_paris" xmlns="http://relaxng.org/ns/structure/1.0">
+    <oneOrMore>
+    <element name="tournage">
+        <attribute name="n"/>
+        <element name="titre"><text/></element>
+        <element name="realisateur"><text/></element>
+        <element name="organisme_demandeur"><text/></element>
+        <element name="type_tournage"><text/></element>
+        <element name="lieu">
+            <element name="adresse"><text/></element>
+            <element name="arrondissement"><text/></element>
+            <element name="xy"><text/></element>
+        </element>
+        <element name="dates">
+            <element name="date_debut"><text/></element>
+            <element name="date_fin"><text/></element>
+        </element>
+    </element>
+    </oneOrMore>
+</element>

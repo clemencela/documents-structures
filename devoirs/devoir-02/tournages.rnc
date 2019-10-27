@@ -1,0 +1,18 @@
+element tournages_paris {
+    element tournage{
+        attribute n {text},
+        element titre {text},
+        element realisateur {text},
+        element organisme_demandeur {text},
+        element type_tournage {text},
+        element lieu {
+            element adresse {text},
+            element arrondissement {text},
+            element xy {text}
+        },
+        element dates {
+            element date_debut {text},
+            element date_fin {text}
+        }
+    }+
+}
