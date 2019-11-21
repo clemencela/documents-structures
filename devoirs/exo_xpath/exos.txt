@@ -1,0 +1,19 @@
+*La racine du document : //juicers
+
+*Tous les noeuds juicer : //juicer
+
+*Tous les noeuds attributs de juicer : //juicer/@*  ou //juicer/attribute::*
+
+*Le texte des noeuds attributs de juicer : //juicer/attribute::*/data() ou //juicer/@*/string()
+
+*Tous les enfants de juicer : //juicer/child::* ou /juicers/juicer/*
+
+*Tous les juicer qui ont un attribut type "gear" : //juicer[@type = "gear"]
+
+*Le premier juicer : //juicer[1]
+
+*Le dernier juicer : //juicer[last()]
+
+*La garantie pour le 2ième juicer : //juicer[1]/warranty (pour le 2ème on a rien) ou //juicer[2]/child::warranty
+
+*Les juicer avec un cost inférieur à 100$ : //juicer[cost/text()<100] ou //juicer[cost < 100]
